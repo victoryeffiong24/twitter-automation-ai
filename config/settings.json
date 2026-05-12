@@ -78,34 +78,25 @@
     "format": "%(asctime)s - %(levelname)s - %(module)s - %(message)s"
   },
   "browser_settings": {
-    "type": "firefox",
-    "headless": false,
-    "user_agent_generation": "random",
-    "custom_user_agent": null,
-    "proxy": null,
-    "window_size": "1920,1080",
-    "use_undetected_chromedriver": true,
-    "enable_stealth": false,
-    "login_wait_seconds": 60,
-    "cookie_domain_url": "https://x.com",
-    "driver_options": [
-      "--no-sandbox",
-      "--disable-dev-shm-usage",
-      "--ignore-certificate-errors",
-      "--disable-gpu",
-      "--log-level=3",
-      "--disable-notifications",
-      "--disable-popup-blocking"
-    ],
-    "page_load_timeout_seconds": 30,
-    "script_timeout_seconds": 30,
-    "proxy_pools": {
-      "residential_eu": [
-        "http://user:${RESI_PASS}@eu1.proxy.local:8080",
-        "http://user:${RESI_PASS}@eu2.proxy.local:8080"
-      ]
-    },
-    "proxy_pool_strategy": "hash",
-    "proxy_pool_state_file": "data/proxy_pools_state.json"
-  }
+  "type": "firefox",
+  "headless": false,
+  "user_agent_generation": "random",
+  "custom_user_agent": null,
+  "proxy": null,
+  "window_size": "1920,1080",
+  "use_undetected_chromedriver": false,
+  "enable_stealth": false,
+  "login_wait_seconds": 60,
+  "cookie_domain_url": "https://x.com",
+  "driver_options": [],
+  "page_load_timeout_seconds": 30,
+  "script_timeout_seconds": 30,
+  "proxy_pools": {
+    "residential_eu": [
+      "http://user:${RESI_PASS}@eu1.proxy.local:8080",
+      "http://user:${RESI_PASS}@eu2.proxy.local:8080"
+    ]
+  },
+  "proxy_pool_strategy": "hash",
+  "proxy_pool_state_file": "data/proxy_pools_state.json"
 }
