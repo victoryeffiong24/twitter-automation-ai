@@ -1,6 +1,14 @@
 [phases.setup]
-nixPkgs = ["python3", "chromedriver"]
-aptPkgs = ["libglib2.0-0", "libnss3", "libgconf-2-4", "libfontconfig1"]
+nixPkgs = ["python3", "firefox", "geckodriver"]
+
+aptPkgs = [
+  "libglib2.0-0",
+  "libnss3",
+  "libdbus-glib-1-2",
+  "libasound2",
+  "libx11-xcb1",
+  "libxt6"
+]
 
 [start]
 cmd = "python src/main.py"
