@@ -100,3 +100,4 @@
   "proxy_pool_strategy": "hash",
   "proxy_pool_state_file": "data/proxy_pools_state.json"
 }
+}
